@@ -36,7 +36,7 @@ body {
 
 .topheaderlink {
   display: inline-block;
-  border-right: 1px solid #595858;
+  background-color: #323232;
   height: 116px;
   text-align: center;
   color: #fff;
