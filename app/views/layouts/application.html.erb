@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Angela van den Hudding</title>
+    <%= csrf_meta_tags %>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway|Lato" rel="stylesheet">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <%= yield %>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script> $(window).scroll(
+    function () {
+    var currentTop = $(window).scrollTop();
+    if (currentTop < 80) {
+        $(".contactheader").show();
+    } else {
+        $(".contactheader").hide();
+    }
+    this.previousTop = currentTop;
+});
+    </script>
+  </body>
+</html>

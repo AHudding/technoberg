@@ -1,0 +1,95 @@
+<div class="topheader">
+    <div class="navbar">
+      <a href="#">
+        <div class="logos">
+          <div class="logo-navbar">
+            <div class="angela-red"><b>ANGE</b>
+            </div>
+            <div class="angela-grey">LA
+            </div>
+          </div>
+            <div class="logo-navbar">
+              <p class="hudding">VAN DEN HUDDING</p>
+            </div>
+        </div>
+      </a>
+    <a href="https://nl.linkedin.com/in/angela-van-den-hudding-2049a7a"> <div class="topheaderlink"><b> LINKEDIN </b> </div></a>
+    <a href="https://github.com/angela2389/Badmintonshop"><div class="topheaderlink"><b> GITHUB BADMINTONSHOP </b> </div></a>
+    <a href="https://badmintonshop.herokuapp.com/"><div class="topheaderlink"><b> DEMO BADMINTONSHOP </b></div></a>
+  </div>
+</div>
+
+<div class="header">
+  <div class="picture">
+    <div class="welcome">
+      <h3><b>PAST GOED BIJ TECHNOBERG</b></h3>
+        <hr width="350" color="#936e6e" border-style="solid">
+      <p>Bekijk de mogelijkheden in een gesprek.</p>
+    </div>
+  </div>
+  <div class="picturebot"></div>
+</div>
+
+<div class="main">
+  <div class="hire">
+    <h1>  </h1>
+  </div>
+  <div class="experience">
+    <div id="jobs">
+      <h1>Wie ben ik?</h1>
+      <p>Ik ben Angela van den Hudding, 27 jaar en kom uit Hoorn. Ik heb jarenlang in de crediteuren administratie gewerkt en
+        ben onlangs aan een traineeship via <a href="https://www.codaisseur.com/hire-a-developer">Codaisseur</a> begonnen.
+        Ik heb inmiddels al twee maanden cursus met succes voltooid en ben nu een aantal weken zelfstandig bezig om C# en .Net te leren.
+        Ik zou graag bij jullie aan de slag gaan als junior webdeveloper.
+      <br><br>Ik heb kennis van:
+      <ul>
+        <li> HTML </li>
+        <li> CSS </li>
+        <li> Bootstrap </li>
+        <li> Ruby </li>
+        <li> Ruby on Rails </li>
+        <li> Javascript (basis) </li>
+        <li> C# (basis) </li>
+        <li> .Net MVC + Webforms (basis)</li>
+        <li> React (basis) </li>
+      </ul>
+
+        <p>De komende twee jaar nog door Codaisseur begeleid en volg ik maandelijks een klassikale les.</p><Br>
+        <p>Ik zou graag met jullie in gesprek komen over de mogelijkheden om binnen Technoberg aan de slag te gaan.</p>
+        <br>
+        <h1> Waarom webdevelopment? </h1>
+        <p> Ik was als tiener al enthousiast om websites te bouwen. Door middel van Joomla heb ik meerdere badmintonwebsites opgezet en beheerd.
+          De grootste hiervan was een badmintoncommunity (die nu helaas niet meer bestaat), waarop nieuwsartikelen, columns, interviews en een forum te vinden was.
+          Ik heb altijd al mijn beroep van programmeren willen maken, maar helaas niet de stap durven zetten. Nu is dat moment gekomen!
+        </p>
+
+    <h1>Werkervaring</h1>
+        <% @jobs.each do |job| %>
+            <b><p>Naam:</b> <%= job.name %></p>
+            <b><p>Functie: </b> <%= job.position %></p>
+            <b><p>Data: </b><%= job.dates %></p>
+            <b><p>Locatie: </b><%= job.location %></p>
+            <b><p>Omschrijving: </b><%= job.description %></p>
+            <br>
+        <% end %>
+
+    <h3><%= link_to 'Technoberg aan deze lijst toevoegen?', create_path, method: :create %></h3>
+    <br>
+
+  </div>
+    <div class="education">
+      <h1> Opleidingen </h1>
+        <% @educations.each do |education| %>
+            <b><p>Instelling: </b><%= education.institutionname %></p>
+            <b><p>Data: </b><%= education.dates %></p>
+            <b><p>Studie: </b><%= education.description %></p>
+            <br>
+        <% end %>
+    </div>
+  </div>
+  <div class="me">
+  </div>
+</div>
+
+<div class="call-me"></p>Bel voor een afspraak: <b>06-52204121</b></p>
+<a href="mailto:angela.vandenhudding@gmail.com">of stuur een <b>email </b><img src="http://res.cloudinary.com/angela2389/image/upload/v1476388277/envelope-icon-0_wha868.png"></a></div>
