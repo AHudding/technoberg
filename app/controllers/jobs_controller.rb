@@ -14,7 +14,7 @@ class JobsController < ApplicationController
   # POST /jobs
   # POST /jobs.json
   def create
-    @job = Job.new(name: "Technoberg", position: "Jr. webdeveloper", location: "Hoorn", dates: "Oktober 2016 - toekomst", description: "Een geweldige baan")
+    @job = Job.new(name: "Technoberg", position: "Jr. webdeveloper", location: "Purmerend", dates: "November 2016 - toekomst", description: "Een geweldige baan")
 
     respond_to do |format|
       if @job.save
